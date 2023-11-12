@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1</title>
+    <link rel="stylesheet" href="f1.css">
+    <style>
+        body{
+            height: 800px;
+            background-color: rgb(100, 100, 100);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="form">F1 yarışı izlemek için lütfen aşağıdaki formu doldururnuz</h1>
+    <div id="form">
+        <div class="isim">
+        <label><strong>İsminiz:</strong></label>
+        <input type="text" placeholder="isim" name="" style="height: 30px; width: 250px;">
+        </div>
+        
+        <div class="soyad">
+        <label><strong>Soyisminiz:</strong></label>
+        <input type="text" placeholder="Soyisim:" name="" style="height: 30px; width: 250px;"><br>
+        </div>
+
+        <div class="email">
+        <label><strong>email:</strong></label>
+        <input type="text" placeholder="email" name="" style="height: 30px; width: 250px;"><br>
+        </div>
+
+        <div class="adres">
+        <label><strong>Adresiniz:</strong></label>
+        <input type="text" placeholder="adresiniz:" name="" style="height: 30px; width: 250px;"><br>
+        </div>
+        
+        <div class="cinsiyet">
+        <label><strong>Cinsiyetiniz:</strong> </label>
+
+		<label><strong>Erkek</strong></label>
+		<input type="radio" name="cinsiyet">
+
+		<label><strong>Kadın</strong></label>
+		<input type="radio" name="cinsiyet">
+        </div>
+
+        <div class="eğitim">
+        <label><strong>Eğitim durumunuz:</strong></label>
+
+		<select>
+			<option>İlköğretim</option>
+			<option>Lise</option>
+			<option>Yüksekokul</option>
+			<option>Üniversite</option>
+			<option>Master</option>
+			<option>Doktora</option>
+		</select>
+        </div>
+        
+        <div class="dogum">
+        <label><strong>Doğum Tarihi:</strong></label>
+        <input type="date" name=""><br>
+        </div>
+
+        <div class="görüş">
+        <form name="yazi" method="post" action="yazi_kayit.php">
+            <div class="başlık">
+            <strong>Konu Başlığı:</strong> <input type="text" name="baslik"><br>
+            </div>
+            <strong>Görüş ve Önerileriniz:</strong><br>
+            <textarea name="yazi" rows="10" cols="50"></textarea><br>
+            <input type="hidden" name="islem" value="yenikayit">
+         </form>
+         </div>
+         <a class="menu__link" href="#"><strong>Gönder</strong></a>
+    </div>
+    
+    <nav id="navbar2">
+
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <div class="ana1">
+                    <a href="">Anasayfa</a>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <div class="hak1">
+                    <a href="">Hakkimizda</a>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <div class="ilet1">
+                    <a href="">İletişim</a>
+                    </div>
+                </li>
+    
+                <div class="menu2">
+                <li class="menu-item">
+                    <div class="kayit1">
+                    <a href="">Kayıt Ol</a>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <div class="gir1">
+                    <a href="">Giriş</a>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <div class="sos">
+                    <a href="">Sosyal Medya Hesaplarımız</a>
+                    </div>
+                </li>
+                </div>
+            </ul>
+        </div>
+
+        <a href="https://www.instagram.com/"><img class="instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png" alt=""></a>
+
+        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidHIifQ%3D%3D%22%7D">
+        <img class="twitter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/584px-Logo_of_Twitter.svg.png" alt="">
+        </a>
+
+        <a href="https://www.formula1.com/">
+        <img class="for1" src="https://wallpaperaccess.com/full/2180258.png" alt="">
+        </a>
+    </nav>
+</body>
+</html>
